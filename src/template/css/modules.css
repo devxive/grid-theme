@@ -1,0 +1,47 @@
+/* MODULES CSS
+*********************************************/
+.user-login .dropdown-menu {
+	padding: 0;
+}
+
+.user-login .well {
+	border-radius: 0;
+	margin-bottom: 0;
+	padding: 10px 19px;
+}
+
+.user-login .dropdown-menu li.user-menu a {
+	padding: 5px 20px;
+}
+
+.user-login .dropdown-menu .btn[type=submit] {
+	margin-top: 10px;
+}
+
+.user-login .nav-user-photo {
+	max-width: 40px;
+	margin: -2px 8px 0 0;
+	border: 2px solid #fff;
+}
+
+.user-info {
+	max-width: 100px;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	line-height: 12px;
+	position: relative;
+	top: 10px;
+}
+
+.user-info small {
+	display: block;
+}
+
+li.user-login > a > i {
+	width: 20px;
+	text-align: center;
+}

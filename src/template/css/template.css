@@ -1,0 +1,60 @@
+/* TEMPLATE IMPORT CSS
+*********************************************/
+@import "modules.css";
+
+
+
+/* TEMPLATE BASE CSS
+*********************************************/
+body {
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.container {
+	max-width: 100%;
+}
+
+.navbar {
+	min-height: 45px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.navbar-brand {
+	padding: 10px 15px;
+	font-size: 24px;
+}
+
+.navbar ul.nav > li > a {
+	padding: 0 8px;
+	line-height: 45px;
+	min-width: 50px;
+}
+
+
+
+/* TEMPLATE HTML CSS
+*********************************************/
+li form .input-group {
+	margin-bottom: 10px;
+}
+
+
+/* TEMPLATE TRANSITIONS CSS
+*********************************************/
+a, btn {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+ul.dropdown-menu a {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
