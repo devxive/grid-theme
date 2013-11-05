@@ -36,6 +36,7 @@
 	<positions>
 		<position>navlogin</position>
 		<position>breadcrumb</position>
+		<position>breadcrumb-search</position>
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
