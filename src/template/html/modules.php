@@ -1,13 +1,57 @@
-<?php  
-/*------------------------------------------------------------------------
-# author    your name or company
-# copyright Copyright (C) 2011 example.com. All rights reserved.
-# @license  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-# Website   http://www.example.com
--------------------------------------------------------------------------*/
+<?php
+/**
+ * @package     Joomla.Administrator
+ * @subpackage  Templates.standard
+ *
+ * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
 
 defined('_JEXEC') or die;
 
+/**
+ * This is a file to add template specific chrome to module rendering.  To use it you would
+ * set the style attribute for the given module(s) include in your template to use the style
+ * for each given modChrome function.
+ *
+ * eg.  To render a module mod_test in the submenu style, you would use the following include:
+ * <jdoc:include type="module" name="test" style="submenu" />
+ *
+ * This gives template designers ultimate control over how modules are rendered.
+ *
+ * NOTICE: All chrome wrapping methods should be named: modChrome_{STYLE} and take the same
+ * two arguments.
+ */
+
+/*
+ * Module chrome for rendering the module in a submenu
+ */
+function modChrome_no($module, &$params, &$attribs)
+{
+	if ($module->content)
+	{
+		echo $module->content;
+	}
+}
+
+function modChrome_well($module, &$params, &$attribs)
+{
+	if ($module->content)
+	{
+		echo "<div class=\"well " . htmlspecialchars($params->get('moduleclass_sfx')) . "\">";
+		if ($module->showtitle)
+		{
+			echo "<h3 class=\"page-header\">" . $module->title . "</h3>";
+		}
+		echo $module->content;
+		echo "</div>";
+	}
+}
+
+
+/*
+ * Test Cases
+ */
 function modChrome_slider($module, &$params, &$attribs) {
 	echo JHtml::_('sliders.panel',JText::_($module->title),'module'.$module->id);
 	echo $module->content;
@@ -21,5 +65,4 @@ function modChrome_mystyle($module, &$params, &$attribs) { ?>
 		</div>
 	</div><?php
 }
-
 ?>
