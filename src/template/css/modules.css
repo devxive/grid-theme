@@ -1,4 +1,4 @@
-/* MODULES CSS
+/* DROPDOWN LOGIN CSS
 *********************************************/
 .user-login .dropdown-menu {
 	padding: 0;
@@ -44,4 +44,287 @@
 li.user-login > a > i {
 	width: 20px;
 	text-align: center;
+}
+
+li.user-login > a span.login-text i {
+	padding-right: 5px;
+}
+
+
+/* SIDEBAR SHORTCUTS CSS
+*******************************************/
+.sidebar-shortcuts {
+	background-color: #fafafa;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+	line-height: 40px;
+	max-height: 42px;
+	margin-bottom: 0;
+}
+
+.sidebar-shortcuts .btn:focus {
+	outline: none;
+}
+
+.sidebar-shortcuts-large {
+	padding-bottom: 4px;
+}
+
+.sidebar-shortcuts-large > .btn {
+	width: 41px;
+	line-height: 28px;
+	margin-top: -2px;
+	padding: 0;
+	text-align: center;
+}
+
+.sidebar-shortcuts-large > .btn > .nav-icon {
+	margin: 0;
+}
+
+.sidebar-shortcuts-mini {
+	display: none;
+	font-size: 0;
+	width: 42px;
+	line-height: 18px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #ffffff;
+}
+
+.sidebar-shortcuts-mini > .btn {
+	border-width: 0 !important;
+	font-size: 0;
+	line-height: 0;
+	padding: 8px !important;
+	margin: 0 1px;
+	border-radius: 0 !important;
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+
+/* BREADCRUMBS CSS
+*******************************/
+body.breadcrumbs-fixed {
+	padding-top: 87px;
+}
+
+body.breadcrumbs-fixed.sidebar-active .breadcrumbs {
+	left: 190px;
+	margin-left: 0;
+	padding-right: 190px;
+}
+
+body.sidebar-active .breadcrumbs {
+	left: 0;
+	margin-left: 190px;
+}
+
+body.breadcrumbs-fixed.sidebar-open .breadcrumbs {
+	left: 0;
+	margin-left: 0;
+
+	-webkit-transform: translate3d(190px, 0, 0);
+	-moz-transform: translate3d(190px, 0, 0);
+	-ms-transform: translate3d(190px, 0, 0);
+	-o-transform: translate3d(190px, 0, 0);
+	transform: translate3d(190px, 0, 0);
+
+	-webkit-transition: -webkit-transform 500ms ease;
+	-moz-transition: -moz-transform 500ms ease;
+	-ms-transition: -ms-transform 500ms ease;
+	-o-transition: -o-transform 500ms ease;
+	transition: transform 500ms ease;
+}
+
+body.sidebar-open .breadcrumbs {
+	-webkit-transform: translate3d(190px, 0, 0);
+	-moz-transform: translate3d(190px, 0, 0);
+	-ms-transform: translate3d(190px, 0, 0);
+	-o-transform: translate3d(190px, 0, 0);
+	transform: translate3d(190px, 0, 0);
+
+	-webkit-transition: -webkit-transform 500ms ease;
+	-moz-transition: -moz-transform 500ms ease;
+	-ms-transition: -ms-transform 500ms ease;
+	-o-transition: -o-transform 500ms ease;
+	transition: transform 500ms ease;
+}
+
+body.breadcrumbs-fixed .breadcrumbs {
+	position: fixed;
+	left: 0;
+	top: 45px;
+	z-index: 1028;
+	margin-left: 0;
+
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: -webkit-transform 500ms ease;
+	-moz-transition: -moz-transform 500ms ease;
+	-ms-transition: -ms-transform 500ms ease;
+	-o-transition: -o-transform 500ms ease;
+	transition: transform 500ms ease;
+}
+
+.breadcrumbs {
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+	min-height: 41px;
+	line-height: 40px;
+	padding: 0 12px 0 0;
+	display: block;
+
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: -webkit-transform 500ms ease;
+	-moz-transition: -moz-transform 500ms ease;
+	-ms-transition: -ms-transform 500ms ease;
+	-o-transition: -o-transform 500ms ease;
+	transition: transform 500ms ease;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	display: inline-block;
+	line-height: 25px;
+	margin: 0;
+	font-size: 13px;
+	border-radius: 0;
+}
+
+.breadcrumb > li,
+.breadcrumb > li.active {
+	color: #555555;
+}
+
+.breadcrumb > li > a {
+	display: inline-block;
+	color: #4c8fbd;
+}
+
+.breadcrumb > li > span {
+	display: inline-block;
+}
+
+.breadcrumb > li + li:before {
+	font-family: FontAwesome;
+	font-size: 14px;
+	content: "\f105";
+	position: relative;
+	top: 1px;
+}
+
+.breadcrumb .home-icon {
+	margin-left: 4px;
+	margin-right: 2px;
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+}
+
+
+/* SEARCHBOX IN BREADCRUMB CSS
+*******************************/
+#breadcrumb-search {
+	display: inline-block;
+	line-height: 24px;
+	padding: 6px 15px;
+}
+
+.breadcrumb-right {
+	float: right !important;
+}
+
+.breadcrumb-search .input-group {
+	width: 200px;
+}
+
+.breadcrumb-search .input-group .form-control {
+	height: 28px !important;
+}
+
+.breadcrumb-search .input-group .btn {
+	height: 28px !important;
+	line-height: 14px;
+}
+
+.breadcrumb-search .breadcrumb-search-input {
+	height: 28px !important;
+	font-size: 13px;
+	color: #666666 !important;
+	width: 152px;
+
+	-webkit-transition: width linear .15s;
+	-moz-transition: width ease .15s;
+	-ms-transition: all ease .15s;
+	-o-transition: all ease .15s;
+	transition: all ease .15s;
+}
+
+.breadcrumb-search .breadcrumb-search-icon {
+	color: #6fb3e0 !important;
+	font-size: 14px !important;
+	line-height: 24px !important;
+}
+
+.breadcrumb-search.minimized .breadcrumb-search-input {
+	width: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	max-width: 0;
+}
+
+.breadcrumb-search.minimized:hover .breadcrumb-search-input,
+.breadcrumb-search.minimized .breadcrumb-search-btn:active + .breadcrumb-search-input,
+.breadcrumb-search.minimized .breadcrumb-search-input:focus,
+.breadcrumb-search.minimized .breadcrumb-search-input:hover,
+.breadcrumb-search.minimized .breadcrumb-search-input:active {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	width: 152px;
+	max-width: 152px;
+}
+
+.breadcrumb-search.minimized .breadcrumb-search-icon {
+	border: 1px solid;
+	border-radius: 100%;
+	background-color: #FFF;
+	padding: 0 5px !important;
+}
+
+.breadcrumb-search.minimized:hover .breadcrumb-search-icon,
+.breadcrumb-search.minimized .breadcrumb-search-input:focus ~ .breadcrumb-search-icon,
+.breadcrumb-search.minimized .breadcrumb-search-input:hover ~ .breadcrumb-search-icon,
+.breadcrumb-search.minimized .breadcrumb-search-input:active ~ .breadcrumb-search-icon {
+	border: none;
+	border-radius: 0;
+	padding: 0 3px !important;
+}
+
+.breadcrumb-search-icon {
+	border: none;
+	border-radius: 0;
+	padding: 0 3px !important;
 }
