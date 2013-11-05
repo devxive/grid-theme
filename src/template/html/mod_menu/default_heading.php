@@ -9,5 +9,16 @@
 
 defined('_JEXEC') or die;
 
+// Note. It is important to remove spaces between elements.
+$class = $item->anchor_css ? 'class="nav-icon '.$item->anchor_css.'" ' : '';
+$title = $item->anchor_title ? ' title="'.$item->anchor_title.'" ' : '';
+if ($item->menu_image)
+	{
+		$item->params->get('menu_text', 1) ?
+		$linktype = '<img src="'.$item->menu_image.'" alt="'.$item->title.'" /><span class="image-title">'.$item->title.'</span> ' :
+		$linktype = '<img src="'.$item->menu_image.'" alt="'.$item->title.'" />';
+}
+else { $linktype = $item->title;
+}
 ?>
-<span class="nav-header"><?php echo $item->title; ?></span>
+<a href="#" class="dropdown-toggle"><i <?php echo $class; ?>></i> <span class="menu-text"<?php echo $title; ?>><?php echo $linktype; ?></span><b class="arrow fa fa-angle-down"></b></a>
