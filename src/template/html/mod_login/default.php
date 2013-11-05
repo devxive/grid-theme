@@ -17,7 +17,7 @@ $usersConfig = JComponentHelper::getParams('com_users');
 		<? if ($usersConfig->get('allowUserRegistration')) : ?>
 			<span class="login-text"><i class="fa fa-sign-in"></i> <?php echo JText::_('JLOGIN') . '/' . JText::_('MOD_LOGIN_REGISTER'); ?></span>
 		<? else: ?>
-			<span class="login-text"><i class="fa fa-sign-in"></i> <?php echo JText::_('JLOGIN'); ?></span>
+			<span class="login-text"><i class="fa fa-hand-o-right icon-animated-handpointer"></i> <?php echo JText::_('JLOGIN'); ?></span>
 		<? endif; ?>
 		<i class="fa fa-caret-down"></i>
 	</a>
