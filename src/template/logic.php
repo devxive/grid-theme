@@ -104,6 +104,6 @@ JHtml::_('script', $tpath . '/js/template.js', false, false);
 // Add Google font
 if ( $googlefont ) {
 	$doc->addStyleSheet( 'https://fonts.googleapis.com/css?family=' . $googlefont );
-	$doc->addStyleDeclaration( 'body { font-family: ' . str_replace('+', ' ', $googlefont) . '; }' );
+	$doc->addStyleDeclaration( 'body, h1, h2, h3, h4, h5, h6 { font-family: ' . str_replace('+', ' ', $googlefont) . '; }' );
 }
 ?>
